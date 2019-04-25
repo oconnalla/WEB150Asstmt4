@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB150 Assmt 4</title>
+</head>
+    <body>
+        <script>
+            var gradeInput = parseInt(prompt("Please enter you number grade between 0 and 100"));
+
+            var gradeFunction = function(){
+                var grade = '';
+                if (gradeInput  >= 88 && gradeInput <= 100){
+                    grade = 'A';
+                    alert('Number grade = ' + gradeInput + '\nLetter grade = ' + grade);
+                } else if(gradeInput  >= 80 && gradeInput  <= 87.99){ 
+                    grade = 'B';
+                    alert('Number grade = ' + gradeInput + '\nLetter grade = ' + grade);
+                } else if (gradeInput  >= 68 && gradeInput  <= 79.99){
+                    grade = 'C';
+                    alert('Number grade = ' + gradeInput + '\nLetter grade = ' + grade);
+                }else if(gradeInput  >= 60 && gradeInput  <= 67.99){
+                    grade = 'D';
+                    alert('Number grade = ' + gradeInput + '\nLetter grade = ' + grade);
+                }else if(gradeInput  >= 0 && gradeInput  <= 59.99){
+                    grade = 'F';
+                    alert('Number grade = ' + gradeInput + '\nLetter grade = ' + grade);
+                }else{
+                    alert('Good bye');
+                }
+            }
+            gradeFunction(gradeInput);
+        </script>
+        
+    </body>
+</html>
